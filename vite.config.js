@@ -1,22 +1,6 @@
-# 🌺 Malay Link
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-マレーシアに留学中の日本人が安心してつながれるコミュニティアプリ
-
-## 機能
-
-- 🌺 つぶやき・返信機能
-- 🤖 マレくん（AIアシスタント）
-- 📱 SIMガイド（5社比較・指差し英語）
-- 🚗 便利リンク（Grab・大使館など）
-- 🟢 大学アドレス認証（仮登録/本登録の二段構え）
-- 🛡️ NGワード検知・通報機能
-- 🌐 日本語/英語切替
-
-## 技術
-
-- React + Vite
-- Supabase (データベース・認証)
-
-## ライセンス
-
-個人プロジェクト
+export default defineConfig({
+  plugins: [react()],
+})
